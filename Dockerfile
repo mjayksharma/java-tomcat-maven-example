@@ -5,5 +5,5 @@ WORKDIR /daticahealth
 EXPOSE 8080/tcp
 RUN chmod -R 777 /daticahealth
 WORKDIR /
-ENTRYPOINT ["/bin/bash"] 
+ENTRYPOINT ["/bin/bash","-c"] 
 CMD ["java","-jar","target/dependency/webapp-runner.jar target/*.war"]
