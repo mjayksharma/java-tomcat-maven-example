@@ -5,7 +5,8 @@ COPY ./target .
 EXPOSE 8080
 #ENTRYPOINT ["/bin/bash","-c"]
 #CMD pwd; ls;sleep 30m
-CMD ["java","-jar","dependency/webapp-runner.jar","java-tomcat-maven-example.war"]
+CMD ["java","-jar","dependency/webapp-runner.jar","\*.war"]
+#CMD ["java","-jar","dependency/webapp-runner.jar","java-tomcat-maven-example.war"]
 
 #CMD java -jar target/dependency/webapp-runner.jar target/*.war
 
