@@ -5,5 +5,5 @@ EXPOSE 8080
 RUN cd daticahealth/
 #ENTRYPOINT ["/bin/bash","-c"]
 #CMD ["java","-jar","target/dependency/webapp-runner.jar","target/*.war"]
-CMD [java -jar target/dependency/webapp-runner.jar target/*.war]
+CMD java -jar target/dependency/webapp-runner.jar target/*.war
 
