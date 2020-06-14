@@ -4,6 +4,8 @@ WORKDIR /daticahealth
 COPY ./ .
 EXPOSE 8080
 #ENTRYPOINT ["/bin/bash","-c"]
-CMD ["java","-jar","/daticahealth/target/dependency/webapp-runner.jar","/daticahealth/target/*.war"]
+CMD pwd; ls;sleep 30m
+#CMD ["java","-jar","/daticahealth/target/dependency/webapp-runner.jar","/daticahealth/target/*.war"]
+
 #CMD java -jar target/dependency/webapp-runner.jar target/*.war
 
